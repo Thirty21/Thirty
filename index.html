@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mental Helt</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script
+    type="module"
+    src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"
+  ></script>
+</head>
+<body class="bg-gray-900">
+  <div class="relative w-full h-screen overflow-hidden">
+    <!-- Text Content -->
+    <h1 
+      class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-extrabold text-white text-xl md:text-3xl lg:text-4xl opacity-30 z-0 text-center px-4 -rotate-12">
+      Hello, ini adalah Thirty. Aku di buat oleh ahdi dan aku akan menemani kamu kapan pun.<br> @ahdiikhf_
+    </h1>
+
+    <!-- 3D Model -->
+    <model-viewer
+      src="./assets/img/robot.glb"
+      class="w-full h-full z-10"
+      touch-action="pan-y"
+      camera-controls
+      auto-rotate
+      autoplay
+      ar
+      ar-modes="webxr scene-viewer"
+    >
+    </model-viewer>
+  </div>
+</body>
+</html>
